@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Schoolbell', cursive;
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        height: calc(100vh - 29px);
+        border-top: 15px solid rgb(122, 50, 5);
+        border-bottom: 15px solid rgb(102, 50, 5);
+    }
+    
+    #fundo {
+        width: 100%;
+        height: calc(100% - 9px);
+        background-color: rgb(6, 48, 6);
+        border-top: 5px solid rgb(93, 38, 4);
+        border-bottom: 5px solid rgb(73, 38, 4);
+        position: relative;
+    }
+    
+
+    #equi {
+        font-family: 'Schoolbell', cursive;
+        font-size: 25px;
+        color: yellow;
+        position: absolute;
+        bottom: 37px;
+        left: 0px;
+        transform: rotate(45deg);
+    }
+
+    #menuIco {
+        width: 70px;
+        position: absolute;
+        top: 27px;
+        right: 15px;
+        transform: rotate(-45deg);
+    }
+}
+
+@media screen and (min-width: 801px) {
+    main {
+        height: calc(100vh - 29px);
+        border-top: 15px solid rgb(122, 50, 5);
+        border-right: 15px solid rgb(122, 50, 5);
+        border-bottom: 15px solid rgb(102, 50, 5);
+        border-left: 15px solid rgb(102, 50, 5);
+        transition: all 1s ease-in-out;
+    }
+    
+    #fundo {
+        width: calc(100% - 10px);
+        height: calc(100% - 9px);
+        background-color: rgb(6, 48, 6);
+        border-top: 5px solid rgb(93, 38, 4);
+        border-right: 5px solid rgb(93, 38, 4);
+        border-bottom: 5px solid rgb(73, 38, 4);
+        border-left: 5px solid rgb(73, 38, 4);
+        transition: all 1s ease-in-out;
+        position: relative;
+    }
+    
+
+    #equi {
+        font-family: 'Schoolbell', cursive;
+        font-size: 25px;
+        color: yellow;
+        position: absolute;
+        bottom: 37px;
+        left: 25px;
+        transform: rotate(45deg);
+        transition: all 1s ease-in-out;
+    }
+
+    #menuIco {
+        width: 70px;
+        position: absolute;
+        top: 27px;
+        right: 30px;
+        transform: rotate(-45deg);
+        transition: all 1s ease-in-out;
+    }
+}
+
+article {
+    margin-top: 20px;
+}
+
+.title {
+    font-size: 70px;
+    text-align: center;
+    background: url(textura.png) 0 0;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#qT {
+    color: white;
+}
+
+#fT, sup {
+    color: yellow;
+}
+
+#menuIco:hover {
+    transform: rotate(-45deg) scale(1.1);
+    animation: spin 5s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(-45deg);
+    }
+    to {
+        transform: rotate(315deg);
+    }
+}
+
+section {
+    width: 650px;
+    min-height: 350px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+#alternativas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 10px;
+}
+
+.resposta {
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 15px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 3px solid white;
+    font-size: 17px;
+}
+
+.resposta:hover:not(.correta, .incorreta) {
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    border: 3px solid white;
+    padding: 5px;
+    font-size: 20px;
+    margin: 10px auto 0;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.correta {
+  background-color: limegreen;
+}
+
+.incorreta {
+  background-color: crimson;
+}
+
+body {
+    background-color: red;
+}
+
+#modal {
+    background-image: url(folha.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 650px;
+    height: 488px;
+    transform: rotate(-4deg);
+    margin: auto;
+    position: fixed;
+    top: calc(50% - 244px);
+    left: calc(50% - 325px);
+    display: none;
+}
+
+#modal-content {
+    height: calc(100% - 60px);
+    padding: 60px 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#modal-content h1 {
+    color: black;
+    font-family: "Dancing Script";
+    font-size: 40px;
+}
+
+#modal-content p {
+    color: black;
+    font-family: "Dancing Script";
+    font-size: 20px;
+}
