@@ -1,6 +1,12 @@
+//variáveis
+
 let iAtual = 0
 let respondido = false
 let q = false
+const acerto = new Audio("acerto.mp3");
+const erro = new Audio("fail.mp3");
+
+//perguntas e respostas
 
 const perguntas = [
     {
@@ -105,6 +111,8 @@ const perguntas = [
     }
 ]
 
+//mostrar pergunta
+
 function mPergunta(index) {
   const pergunta = perguntas[index];
   document.getElementById("pergunta").textContent = pergunta.texto;
@@ -134,13 +142,22 @@ document.querySelectorAll(".resposta").forEach((div) => {
         d.classList.add(i === correta ? "correta" : "incorreta");
         d.classList.add("desativada");
       });
+
+      acerto.currentTime = 0;
+      acerto.play();
+
       respondido = true;
       document.getElementById("btn").style.display = "block";
     } else {
       this.classList.add("incorreta");
+
+      erro.currentTime = 0;
+      erro.play();
     }
   });
 });
+
+//alterar pergunta
 
 document.getElementById("btn").addEventListener("click", () => {
   iAtual++;
@@ -150,6 +167,8 @@ document.getElementById("btn").addEventListener("click", () => {
     finalizarQuiz();
   }
 });
+
+//termino
 
 function finalizarQuiz() {
   document.getElementById("pergunta").textContent = "Quiz finalizado! Clique no átomo para uma surpresa!";
@@ -165,6 +184,8 @@ window.onload = function () {
   mPergunta(iAtual);
   cModal();
 };
+
+//modal e texto modal
 
 function cModal() {
     if (q) {
@@ -191,3 +212,64 @@ document.addEventListener("click", function (event) {
     modal.style.display = "none";
   }
 });
+
+//interações
+
+const acoes = [
+  {acao: rodar, chance: 0.25},
+  {acao: falar, chance: 0.25},
+  {acao: barulho, chance: 0.3},
+  {acao: autor, chance: 0.2}
+]
+
+document.getElementById("logo").addEventListener("click", function () {
+  let sorteio = Math.random();
+  let acumulado = 0;
+
+  for (let i = 0; i < acoes.length; i++) {
+    acumulado += acoes[i].chance;
+    if (sorteio < acumulado) {
+      acoes[i].acao();
+      break;
+    }
+  }
+})
+
+function rodar() {
+  const robo = document.getElementById("logo")
+  robo.style.animation = "sRobo 2s normal linear"
+  setTimeout(() => {
+    robo.style.animation = "";
+  }, 2000);
+}
+
+function falar() {
+  const frase = document.getElementById("pensamento");
+  frase.innerText="Teste seus conhecimentos";
+
+  const fala = document.getElementById("pensa")
+  fala.style.display = "block"
+  setTimeout(() => {
+    fala.style.display = "none";
+  }, 2000);
+}
+
+function barulho() {
+  const bip1 = new Audio("bip1.mp3");
+  const bip2 = new Audio("bip2.mp3");
+  bip2.play();
+  setTimeout(() => {
+    bip1.play();
+  }, 900);
+}
+
+function autor() {
+  const frase = document.getElementById("pensamento");
+  frase.innerText="Site criador por: insira a desculpa";
+
+  const fala = document.getElementById("pensa")
+  fala.style.display = "block"
+  setTimeout(() => {
+    fala.style.display = "none";
+  }, 2000);
+}
