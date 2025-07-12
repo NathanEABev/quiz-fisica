@@ -9,7 +9,13 @@
     color: white;
 }
 
-@media screen and (max-width: 800px) {
+@media screan and (max-width: 480px) {
+    body {
+        background-color: blue;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 431px) {
     main {
         height: calc(100vh - 29px);
         border-top: 15px solid rgb(122, 50, 5);
@@ -42,6 +48,10 @@
         top: 27px;
         right: 15px;
         transform: rotate(-45deg);
+    }
+
+    body {
+        background-color: red;
     }
 }
 
@@ -86,6 +96,10 @@
         right: 30px;
         transform: rotate(-45deg);
         transition: all 1s ease-in-out;
+    }
+
+    body {
+        background-color: red;
     }
 }
 
@@ -263,10 +277,6 @@ button:hover {
 
 .incorreta {
   background-color: crimson;
-}
-
-body {
-    background-color: red;
 }
 
 #modal {
