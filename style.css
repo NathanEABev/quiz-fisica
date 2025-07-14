@@ -247,6 +247,7 @@
         position: absolute;
         left: calc(50% - 225px);
         top: 50%;
+        display: none;
     }
 }
 
