@@ -92,7 +92,7 @@
 
     section {
         transform: rotate(90deg);
-        position: fixed;
+        position: absolute;
         top: calc(50% - 150px);
         left: calc(50% - 230px);
         text-align: center;
