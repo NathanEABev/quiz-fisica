@@ -96,6 +96,7 @@
         top: calc(50% - 125px);
         left: calc(50% - 230px);
         text-align: center;
+        height: 291px;
     }
 
     #pergunta {

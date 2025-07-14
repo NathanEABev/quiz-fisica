@@ -34,7 +34,7 @@ const perguntas = [
         alternativas: [
             "A força é igual ao produto da massa pela aceleração",
             "Um corpo em repouso tende a continuar em repouso",
-            "Toda ação tem uma reação de mesma intensidade e direção, mas em sentido oposto",
+            "Para toda ação, há uma reação igual e contrária",
             "A energia não pode ser criada nem destruída"
         ], 
         correta: 2
