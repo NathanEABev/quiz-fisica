@@ -40,7 +40,7 @@ const perguntas = [
         correta: 2
     },
     {
-        texto: "4) O que acontece com um objeto quando ele está em queda livre?",
+        texto: "4) O que acontece com um objeto quando<br>ele está em queda livre?",
         alternativas: [
             "Sua massa diminui",
             "Ele para de sofrer aceleração",
@@ -50,7 +50,7 @@ const perguntas = [
         correta: 3
     },
     {
-        texto: "5) Qual dessas alternativas representa uma forma de energia?",
+        texto: "5) Qual dessas alternativas representa<br>uma forma de energia?",
         alternativas: [
             "Pressão",
             "Temperatura",
@@ -60,7 +60,7 @@ const perguntas = [
         correta: 2
     },
     {
-        texto: "6) A unidade de medida do trabalho no Sistema Internacional é:",
+        texto: "6) A unidade de medida do trabalho no<br>Sistema Internacional é:",
         alternativas: [
             "Joule",
             "Watt",
@@ -70,7 +70,7 @@ const perguntas = [
         correta: 0
     },
     {
-        texto: "7) A velocidade escalar média de um corpo é dada por:",
+        texto: "7) A velocidade escalar média de um corpo<br>é dada por:",
         alternativas: [
             "V = m / a",
             "V = d / t",
@@ -80,7 +80,7 @@ const perguntas = [
         correta: 1
     },
     {
-        texto: "8) Qual fenômeno ocorre quando a luz muda de direção ao passar de um meio para outro?",
+        texto: "8) Qual fenômeno ocorre quando a<br>luz muda de direção ao passar<br>de um meio para outro?",
         alternativas: [
             "Reflexão",
             "Refração",
@@ -90,7 +90,7 @@ const perguntas = [
         correta: 1
     },
     {
-        texto: "9) O que é energia potencial gravitacional?",
+        texto: "9) O que é energia potencial<br>gravitacional?",
         alternativas: [
             "Energia relacionada à velocidade de um corpo",
             "Energia armazenada em corpos comprimidos ou esticados",
@@ -100,7 +100,7 @@ const perguntas = [
         correta: 3
     },
     {
-        texto: "10) A lei de conservação da energia afirma que:",
+        texto: "10) A lei de conservação da energia<br>afirma que:",
         alternativas: [
             "A energia de um sistema isolado permanece constante",
             "A energia pode ser destruída para gerar matéria",
@@ -115,7 +115,7 @@ const perguntas = [
 
 function mPergunta(index) {
   const pergunta = perguntas[index];
-  document.getElementById("pergunta").textContent = pergunta.texto;
+  document.getElementById("pergunta").innerHTML = pergunta.texto;
 
   const alternativas = document.querySelectorAll(".resposta");
   alternativas.forEach((div, i) => {
@@ -171,7 +171,8 @@ document.getElementById("btn").addEventListener("click", () => {
 //termino
 
 function finalizarQuiz() {
-  document.getElementById("pergunta").textContent = "Quiz finalizado! Clique no átomo para uma surpresa!";
+  document.getElementById("pergunta").textContent = "";
+  document.getElementById("cabo").style.display = "block";
   document.querySelectorAll(".resposta").forEach((div) => {
     div.style.display = "none";
   });
