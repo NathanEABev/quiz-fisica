@@ -4,7 +4,9 @@ let iAtual = 0
 let respondido = false
 let q = false
 const acerto = new Audio("acerto.mp3");
+acerto.volume = 0.6
 const erro = new Audio("fail.mp3");
+erro.volume = 0.4
 
 //perguntas e respostas
 
@@ -194,7 +196,7 @@ function cModal() {
       document.querySelector("#modal-content p").innerHTML = "insira aqui o futuro texto emocional"
     } else {
       document.querySelector("#modal-content h1").innerHTML = "Site criado por:"
-      document.querySelector("#modal-content p").innerHTML = "vê com a sara amanhã qual vai ser a desculpa (caso queira dá para colocar um esteregg no texto alí no canto)"
+      document.querySelector("#modal-content p").innerHTML = "Nathan Bevilaqua: GitHub - NathanEABev"
     }
 }
 
@@ -257,7 +259,9 @@ function falar() {
 
 function barulho() {
   const bip1 = new Audio("bip1.mp3");
+  bip1.volume = 0.6
   const bip2 = new Audio("bip2.mp3");
+  bip2.volume = 0.35
   bip2.play();
   setTimeout(() => {
     bip1.play();
@@ -266,7 +270,7 @@ function barulho() {
 
 function autor() {
   const frase = document.getElementById("pensamento");
-  frase.innerText="Site criador por: insira a desculpa";
+  frase.innerText="Site criador por: Nathan Bevilaqua";
 
   const fala = document.getElementById("pensa")
   fala.style.display = "block"
@@ -274,3 +278,9 @@ function autor() {
     fala.style.display = "none";
   }, 2000);
 }
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    window.scrollTo(0, 200)
+  }, 50)
+})
