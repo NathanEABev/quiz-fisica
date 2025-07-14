@@ -85,14 +85,15 @@
         font-size: 15px;
         transform: rotate(90deg);
         position: absolute;
-        left: -165px;
-        width: 410px;
+        left: -45px;
+        top: 86%;
+        width: 160px;
     }
 
     section {
         transform: rotate(90deg);
         position: fixed;
-        top: calc(50% - 175px);
+        top: calc(50% - 150px);
         left: calc(50% - 230px);
         text-align: center;
     }
@@ -240,6 +241,13 @@
             transform: rotateY(360deg);
         }
     }
+
+    #cabo {
+        font-size: 20px;
+        position: absolute;
+        left: calc(50% - 225px);
+        top: 50%;
+    }
 }
 
 @media screen and (min-width: 801px) {
@@ -340,6 +348,13 @@
         100% {
             transform: rotateY(360deg);
         }
+    }
+
+    #cabo {
+        font-size: 20px;
+        position: absolute;
+        left: calc(50% - 200px);
+        top: 50%;
     }
 }
 
