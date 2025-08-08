@@ -192,8 +192,8 @@ window.onload = function () {
 
 function cModal() {
     if (q) {
-      document.querySelector("#modal-content h1").innerHTML = "insira aqui o futuro título emocional"
-      document.querySelector("#modal-content p").innerHTML = "insira aqui o futuro texto emocional"
+      document.querySelector("#modal-content h1").innerHTML = "Tem que ver o texto"
+      document.querySelector("#modal-content p").innerHTML = "Tem que ver o texto"
     } else {
       document.querySelector("#modal-content h1").innerHTML = "Site criado por:"
       document.querySelector("#modal-content p").innerHTML = "Nathan Bevilaqua: GitHub - NathanEABev"
