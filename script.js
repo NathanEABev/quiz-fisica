@@ -194,7 +194,7 @@ function cModal() {
   var prox = document.getElementById("seta2")
   var ante = document.getElementById("seta1")
 
-  if (!q) {
+  if (q) {
     prox.style.display = "block"
     ante.style.display = "block"
 
