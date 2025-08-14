@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 * {
     margin: 0;
@@ -440,13 +440,13 @@ button:hover {
 
 #modal-content h1 {
     color: black;
-    font-family: "Dancing Script";
+    font-family: "pacifico", cursive;
     font-size: 40px;
 }
 
 #modal-content p {
     color: black;
-    font-family: "Dancing Script";
-    font-size: 23px;
-    font-weight: 700;
+    font-family: "pacifico", cursive;
+    font-size: 20px;
+    font-weight: 400;
 }
