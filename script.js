@@ -11,106 +11,106 @@ erro.volume = 0.4
 //perguntas e respostas
 
 const perguntas = [
-    {
-        texto: "1) O que é inércia?",
-        alternativas: [
-            "A tendência de um corpo acelerar continuamente",
-            "A força que empurra um corpo para o centro da Terra",
-            "A resistência que um corpo oferece à mudança de seu estado de movimento",
-            "A capacidade de um corpo realizar trabalho"
-        ],
-        correta: 2
-    },
-    {
-        texto: "2) Qual é a grandeza física relacionada à quantidade de matéria de um corpo?",
-        alternativas: [
-            "força",
-            "massa",
-            "velocidade",
-            "energia"
-        ],
-        correta: 1
-    },
-    {
-        texto: "3) A terceira lei de Newton afirma que:",
-        alternativas: [
-            "A força é igual ao produto da massa pela aceleração",
-            "Um corpo em repouso tende a continuar em repouso",
-            "Para toda ação, há uma reação igual e contrária",
-            "A energia não pode ser criada nem destruída"
-        ], 
-        correta: 2
-    },
-    {
-        texto: "4) O que acontece com um objeto quando<br>ele está em queda livre?",
-        alternativas: [
-            "Sua massa diminui",
-            "Ele para de sofrer aceleração",
-            "Ele cai com velocidade constante",
-            "Ele sofre apenas a ação da força da gravidade"
-        ],
-        correta: 3
-    },
-    {
-        texto: "5) Qual dessas alternativas representa<br>uma forma de energia?",
-        alternativas: [
-            "Pressão",
-            "Temperatura",
-            "Cinética",
-            "Potência"
-        ],
-        correta: 2
-    },
-    {
-        texto: "6) A unidade de medida do trabalho no<br>Sistema Internacional é:",
-        alternativas: [
-            "Joule",
-            "Watt",
-            "Newton",
-            "Pascal"
-        ],
-        correta: 0
-    },
-    {
-        texto: "7) A velocidade escalar média de um corpo<br>é dada por:",
-        alternativas: [
-            "V = m / a",
-            "V = d / t",
-            "V = F · d",
-            "V = a · t"
-        ],
-        correta: 1
-    },
-    {
-        texto: "8) Qual fenômeno ocorre quando a<br>luz muda de direção ao passar<br>de um meio para outro?",
-        alternativas: [
-            "Reflexão",
-            "Refração",
-            "Difração",
-            "Polarização"
-        ],
-        correta: 1
-    },
-    {
-        texto: "9) O que é energia potencial<br>gravitacional?",
-        alternativas: [
-            "Energia relacionada à velocidade de um corpo",
-            "Energia armazenada em corpos comprimidos ou esticados",
-            "Energia contida nos alimentos",
-            "Energia devida à posição de um corpo em relação ao solo"
-        ],
-        correta: 3
-    },
-    {
-        texto: "10) A lei de conservação da energia<br>afirma que:",
-        alternativas: [
-            "A energia de um sistema isolado permanece constante",
-            "A energia pode ser destruída para gerar matéria",
-            "A energia sempre aumenta com o tempo",
-            "A energia só existe em sistemas mecânicos"
-        ],
-        correta: 0
-    }
+  {
+    texto: "1) O que é inércia?",
+    alternativas: [
+      "A tendência de um corpo acelerar continuamente",
+      "A força que empurra um corpo para o centro da Terra",
+      "A resistência que um corpo oferece à mudança de seu estado de movimento",
+      "A capacidade de um corpo realizar trabalho"
+    ],
+    correta: 2
+  },
+  {
+    texto: "2) Qual é a grandeza física relacionada à quantidade de matéria de um corpo?",
+    alternativas: [
+      "força",
+      "massa",
+      "velocidade",
+      "energia"
+    ],
+    correta: 1
+  },
+  {
+    texto: "3) A terceira lei de Newton afirma que:",
+    alternativas: [
+      "A força é igual ao produto da massa pela aceleração",
+      "Um corpo em repouso tende a continuar em repouso",
+      "Para toda ação, há uma reação igual e contrária",
+      "A energia não pode ser criada nem destruída"
+    ],
+    correta: 2
+  },
+  {
+    texto: "4) O que acontece com um objeto quando<br>ele está em queda livre?",
+    alternativas: [
+      "Sua massa diminui",
+      "Ele para de sofrer aceleração",
+      "Ele cai com velocidade constante",
+      "Ele sofre apenas a ação da força da gravidade"
+    ],
+    correta: 3
+  },
+  {
+    texto: "5) Qual dessas alternativas representa<br>uma forma de energia?",
+    alternativas: [
+      "Pressão",
+      "Temperatura",
+      "Cinética",
+      "Potência"
+    ],
+    correta: 2
+  },
+  {
+    texto: "6) A unidade de medida do trabalho no<br>Sistema Internacional é:",
+    alternativas: [
+      "Joule",
+      "Watt",
+      "Newton",
+      "Pascal"
+    ],
+    correta: 0
+  },
+  {
+    texto: "7) A velocidade escalar média de um corpo<br>é dada por:",
+    alternativas: [
+      "V = m / a",
+      "V = d / t",
+      "V = F · d",
+      "V = a · t"
+    ],
+    correta: 1
+  },
+  {
+    texto: "8) Qual fenômeno ocorre quando a<br>luz muda de direção ao passar<br>de um meio para outro?",
+    alternativas: [
+      "Reflexão",
+      "Refração",
+      "Difração",
+      "Polarização"
+    ],
+    correta: 1
+  },
+  {
+    texto: "9) O que é energia potencial<br>gravitacional?",
+    alternativas: [
+      "Energia relacionada à velocidade de um corpo",
+      "Energia armazenada em corpos comprimidos ou esticados",
+      "Energia contida nos alimentos",
+      "Energia devida à posição de um corpo em relação ao solo"
+    ],
+    correta: 3
+  },
+  {
+    texto: "10) A lei de conservação da energia<br>afirma que:",
+    alternativas: [
+      "A energia de um sistema isolado permanece constante",
+      "A energia pode ser destruída para gerar matéria",
+      "A energia sempre aumenta com o tempo",
+      "A energia só existe em sistemas mecânicos"
+    ],
+    correta: 0
+  }
 ]
 
 //mostrar pergunta
@@ -191,13 +191,50 @@ window.onload = function () {
 //modal e texto modal
 
 function cModal() {
-    if (q) {
-      document.querySelector("#modal-content h1").innerHTML = "Tem que ver o texto"
-      document.querySelector("#modal-content p").innerHTML = "Tem que ver o texto"
-    } else {
-      document.querySelector("#modal-content h1").innerHTML = "Site criado por:"
-      document.querySelector("#modal-content p").innerHTML = "Nathan Bevilaqua: GitHub - NathanEABev"
+  var prox = document.getElementById("seta2")
+  var ante = document.getElementById("seta1")
+
+  if (q) {
+    prox.style.display = "block"
+    ante.style.display = "block"
+
+    var pg = 1
+    atPg();
+
+    ante.disabled = true;
+    prox.disabled = false;
+
+    prox.onclick = () => {
+      pg = 2;
+      atPg();
+      prox.disabled = true;
+      ante.disabled = false;
+    };
+
+    ante.onclick = () => {
+      pg = 1;
+      atPg();
+      ante.disabled = true;
+      prox.disabled = false;
+    };
+  } else {
+    document.getElementById("seta1").style.display = "none"
+    document.getElementById("seta2").style.display = "none"
+
+    document.querySelector("#modal-content h1").innerHTML = "Site criado por:"
+    document.querySelector("#modal-content p").innerHTML = "Nathan Bevilaqua: GitHub - NathanEABev"
+  }
+
+  function atPg() {
+    if (pg == 1) {
+      document.querySelector("#modal-content h1").style.display = "block"
+      document.querySelector("#modal-content h1").innerHTML = "Professora"
+      document.querySelector("#modal-content p").innerHTML = "desde que cruzamos nossos caminhos, você nos mostrou que a educação vai muito além de códigos. Você nos ensinou que, assim como na robótica, a vida é feita de tentativas, erros, ajustes… e conquistas. Entre risadas, desafios e aprendizados, você deixou uma marca em cada um de nós, não só como professora, mas como alguém que acreditou no nosso potencial, que nos motivou a sermos mais curiosos, e acima de tudo, mais criativos. Seu esforço, sua organização e sua paixão pelo que faz fizeram toda a diferença na nossa aprendizagem. Somos gratos por cada aula bem pensada, por cada dúvida respondida com atenção e por todo o cuidado que você teve com a nossa evolução."
+    } else if (pg == 2) {
+      document.querySelector("#modal-content h1").style.display = "none"
+      document.querySelector("#modal-content p").innerHTML = "Por isso, com todo o carinho, gratidão e admiração, nossa turma te convida para ser nossa Paraninfo, alguém que em tão pouco tempo criou uma amizade entre aluno e professora, mas não uma amizade onde o profissionalismo se torna algo chato, mas sim que deixa tudo mais divertido e leve. A área da educação não é apenas ensinar, é criar uma trajetória, onde no futuro iremos lembrar desses momentos com muita saudade. Tem professores que só passam nas nossas vidas, e tem aqueles que sempre vão ficar guardados no coração e na memória, e é claro que vamos sempre lembrar da icônica frase: VOCÊS JÁ BOTARÃO???! Então obrigada por esses dois anos de muito aprendizado!! Vamos sentir saudade quando tudo isso terminar!!"
     }
+  }
 }
 
 const menuIcon = document.getElementById("menuIco");
@@ -219,10 +256,10 @@ document.addEventListener("click", function (event) {
 //interações
 
 const acoes = [
-  {acao: rodar, chance: 0.25},
-  {acao: falar, chance: 0.25},
-  {acao: barulho, chance: 0.3},
-  {acao: autor, chance: 0.2}
+  { acao: rodar, chance: 0.25 },
+  { acao: falar, chance: 0.25 },
+  { acao: barulho, chance: 0.3 },
+  { acao: autor, chance: 0.2 }
 ]
 
 document.getElementById("logo").addEventListener("click", function () {
@@ -248,7 +285,7 @@ function rodar() {
 
 function falar() {
   const frase = document.getElementById("pensamento");
-  frase.innerText="Teste seus conhecimentos";
+  frase.innerText = "Teste seus conhecimentos";
 
   const fala = document.getElementById("pensa")
   fala.style.display = "block"
@@ -270,7 +307,7 @@ function barulho() {
 
 function autor() {
   const frase = document.getElementById("pensamento");
-  frase.innerText="Site criador por: Nathan Bevilaqua";
+  frase.innerText = "Site criador por: Nathan Bevilaqua";
 
   const fala = document.getElementById("pensa")
   fala.style.display = "block"

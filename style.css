@@ -76,6 +76,22 @@
         display: none;
     }
 
+    #seta1, #seta2 {
+        width: 40px;
+        position: absolute;
+    }
+
+    #seta1 {
+        left: 10px;
+        bottom: 20px;
+    }
+
+    #seta2 {
+        right: 10px;
+        transform: rotate(180deg);
+        bottom: 20px;
+    }
+
     section {
         width: 650px;
         min-height: 350px;
@@ -225,6 +241,22 @@
         top: calc(50% - 244px);
         left: calc(50% - 325px);
         display: none;
+    }
+
+    #seta1, #seta2 {
+        width: 40px;
+        position: absolute;
+    }
+
+    #seta1 {
+        left: 10px;
+        bottom: 20px;
+    }
+
+    #seta2 {
+        right: 10px;
+        transform: rotate(180deg);
+        bottom: 20px;
     }
 
     section {
@@ -399,7 +431,7 @@ button:hover {
 
 #modal-content {
     height: calc(100% - 60px);
-    padding: 60px 20px 0;
+    padding: 60px 40px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -415,5 +447,6 @@ button:hover {
 #modal-content p {
     color: black;
     font-family: "Dancing Script";
-    font-size: 20px;
+    font-size: 23px;
+    font-weight: 700;
 }
